@@ -1,17 +1,42 @@
+// Caching DOM elements and scores
 let teams = {
-    home: { score: 0, scoreEl: "home-score" },
-    guest: { score: 0, scoreEl: "guest-score" }
-}
+  home: { score: 0, scoreEl: document.getElementById("home-score-el") },
+  guest: { score: 0, scoreEl: document.getElementById("guest-score-el") },
+};
 
+const homeBtns = document.querySelectorAll(".home-btn");
+const guestBtns = document.querySelectorAll(".guest-btn");
+const newGameBtn = document.getElementById("new-game-btn");
+
+// Increase score
 function increaseScore(teamName, points) {
-    let team = teams[teamName];
-    team.score += points;
-    document.getElementById(team.scoreEl).innerText = team.score;
+  const team = teams[teamName];
+  team.score += points;
+  team.scoreEl.textContent = team.score;
 }
 
+// Reset score
 function newGame() {
-    for (let teamName in teams) {
-        teams[teamName].score = 0;
-        document.getElementById(teams[teamName].scoreEl).innerText = 0;
-    }
+  for (let teamName in teams) {
+    const team = teams[teamName];
+    team.score = 0;
+    team.scoreEl.textContent = 0;
+  }
 }
+
+// Event Listeners
+homeBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const points = Number(btn.dataset.homePoints);
+    increaseScore("home", points);
+  });
+});
+
+guestBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const points = Number(btn.dataset.guestPoints);
+    increaseScore("guest", points);
+  });
+});
+
+newGameBtn.addEventListener("click", newGame);
