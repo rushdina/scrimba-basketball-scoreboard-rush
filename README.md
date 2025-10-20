@@ -32,7 +32,7 @@ This project is a **basketball-style scoreboard** where users can track scores f
 
 ## 🖼️ Preview
 
-![Basketball Scoreboard Screenshot](images/screenshot-basketballScoreboard.png)
+![Basketball Scoreboard Preview Screenshot](images/screenshot-basketballScoreboard.png)
 
 ## 📚 Sources & References
 - Scrimba course: [Scrimba Frontend Developer Career Path](https://scrimba.com/frontend-path-c0j)  
