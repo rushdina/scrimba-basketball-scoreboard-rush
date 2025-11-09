@@ -10,30 +10,40 @@
     <div class="container">
       <div class="scoreboard">
         <div class="column">
-          <h3>HOME</h3>
+          <h1>HOME</h1>
           <h2 id="home-score-el">0</h2>
-          <div>
-            <button class="home-btn" data-home-points="1">+1</button>
-            <button class="home-btn" data-home-points="2">+2</button>
-            <button class="home-btn" data-home-points="3">+3</button>
+          <div id="home-btns">
+            <button class="home-btn" data-team="home" data-points="1">
+              +1
+            </button>
+            <button class="home-btn" data-team="home" data-points="2">
+              +2
+            </button>
+            <button class="home-btn" data-team="home" data-points="3">
+              +3
+            </button>
           </div>
         </div>
 
         <div class="column">
-          <h3>GUEST</h3>
+          <h1>GUEST</h1>
           <h2 id="guest-score-el">0</h2>
-          <div>
-            <button class="guest-btn" data-guest-points="1">+1</button>
-            <button class="guest-btn" data-guest-points="2">+2</button>
-            <button class="guest-btn" data-guest-points="3">+3</button>
+          <div id="guest-btns">
+            <button class="guest-btn" data-team="guest" data-points="1">
+              +1
+            </button>
+            <button class="guest-btn" data-team="guest" data-points="2">
+              +2
+            </button>
+            <button class="guest-btn" data-team="guest" data-points="3">
+              +3
+            </button>
           </div>
         </div>
       </div>
 
-      <div>
-        <button id="new-game-btn">NEW GAME</button>
-      </div>
+      <button id="new-game-btn">NEW GAME</button>
     </div>
-    <script src="index.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
