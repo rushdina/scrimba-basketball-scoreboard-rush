@@ -1,7 +1,7 @@
 # 🏀 Basketball Scoreboard
 
 A solo project from the [Scrimba Frontend Developer Career Path](https://scrimba.com/frontend-path-c0j).  
-This project is a **basketball-style scoreboard** where users can track scores for both **Home** and **Guest** teams in real time. Each team’s score can be increased by 1, 2, or 3 points, and the game can be reset anytime with the **New Game** button.
+This project is a **basketball-style scoreboard** built to practice **DOM manipulation**, **event handling**, and **JavaScript state management**. It tracks the score of two teams (Home and Guest) in real-time. Users can increment each team’s score by 1, 2, or 3 points and reset the game to start over.
 
 ## 🛠️ Technologies
 - HTML5  
@@ -9,26 +9,28 @@ This project is a **basketball-style scoreboard** where users can track scores f
 - JavaScript (ES6)
 
 ## 🚀 Features
-- Six interactive buttons that correctly update scores for **Home** and **Guest** teams.  
-- A **New Game** button that resets all scores to zero.  
-- Uses **data attributes** and **event listeners** for efficient score updates.  
-- Styled with a **digital scoreboard font** for a realistic look.  
-- Clean, responsive, and centered layout.
+- Dynamic score tracking updates the scores instantly in the DOM as users click the scoring buttons.
+- One reusable function `increaseScore` handles all score increments. 
+- New game or reset functionality sets both teams’ scores to zero with a single button click.
+- All button clicks are handled using a single document listener for efficiency. 
+- Score elements are cached for faster updates and cleaner code.
 
 ## 🧠 What I Learned / Process
-- Practiced **DOM manipulation** and **event handling** in JavaScript.  
-- Used **objects** to organize related data (team names, scores, elements).  
-- Learned to use **dataset attributes (`data-*`)** for clean event logic.  
-- Improved understanding of **flexbox layout** and **custom font integration** in CSS.  
+- Practiced **DOM manipulation** by updating scores dynamically.
+- Implemented **event delegation** to handle multiple buttons efficiently without multiple event listeners.
+- Learned **state management** by keeping track of scores in a JavaScript object.
+- Learned to use **dataset attributes (`data-*`)** to link buttons to functionality.  
+- Improved understanding of **flexbox layout** and **custom font integration** in CSS.
+- Reinforced **function reusability** using a generic function to update scores.
 
 ## 💡 Future Improvements
-- Highlight the **leading team** dynamically.  
+- Highlight the **leading team** dynamically.
+- Save scores in **localStorage** so progress persists on page reload.
 - Add **additional counters** such as:
   - Game period  
   - Team fouls  
-  - Countdown timer  
+  - Countdown timer to simulate real game quarters.
 - Implement **dark/light mode** for better visual experience.  
-- Store scores in **local storage** to persist data after page reloads.
 
 ## 🖼️ Preview
 
