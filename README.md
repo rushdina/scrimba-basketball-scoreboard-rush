@@ -1,7 +1,7 @@
 # 🏀 Basketball Scoreboard
 
 A solo project from the [Scrimba Frontend Developer Career Path](https://scrimba.com/frontend-path-c0j).  
-This project is a **basketball-style scoreboard** built to practice **DOM manipulation**, **event handling**, and **JavaScript state management**. It tracks the score of two teams (Home and Guest) in real-time. Users can increment each team’s score by 1, 2, or 3 points and reset the game to start over.
+This project is a **basketball-style scoreboard** that tracks the score of two teams (**Home** and **Guest**) in real-time. Users can increment each team’s score by 1, 2, or 3 points and reset the game to start over.
 
 ## 🛠️ Technologies
 - HTML5  
